@@ -1,0 +1,12 @@
+django
+pillow 
+djangorestframework
+markdown
+django-filter
+psycopg2-binary
+celery
+kavenegar
+python-decouple
+djangorestframework-simplejwt
+django-redis
+PhoneNumberField
