@@ -1,18 +1,21 @@
 from rest_framework.generics import GenericAPIView
 from rest_framework.mixins import ListModelMixin, CreateModelMixin
-
 from rest_framework import generics
 from rest_framework.generics import get_object_or_404
 from rest_framework import permissions
 from rest_framework.exceptions import ValidationError
-
 from books.models import Book, Comment
 from books.api.serializers import CommentSerializer, BookSerializer
 from books.api.permissions import IsAdminUserOrReadOnly, IsCommenterOrReadOnly
 from books.api.pagination import MySPagination, MyLPagination
 
+
+
+
+
+
 class BookListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Book.objects.all()
+    queryset = Book.objects.all().order_by("created_date")
     serializer_class = BookSerializer
     permission_classes = [IsAdminUserOrReadOnly]
     pagination_class = MySPagination

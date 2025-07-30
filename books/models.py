@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Book(models.Model):
     title = models.CharField(max_length=200)
-    author = models.CharField(max_length=200)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     price = models.IntegerField()
     description = models.TextField()
     created_date = models.DateField(auto_now_add=True) #It is for only one time and it will be unchanged.
@@ -19,7 +19,7 @@ class Book(models.Model):
 class Comment(models.Model):
     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='comments')
     #name = models.CharField(max_length=200)
-    name = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments')
+    name = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_comments')
     body = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
     up_dated = models.DateTimeField(auto_now=True)
