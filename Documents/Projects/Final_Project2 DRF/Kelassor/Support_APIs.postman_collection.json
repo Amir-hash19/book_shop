@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "550106e0-c384-4bc3-aada-e9c4489960e1",
+		"name": "Support_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911537",
+		"_collection_link": "https://yektaco.postman.co/workspace/Kelassor-APIs~32f12586-362a-43ea-8529-f01bb9598e13/collection/42911537-550106e0-c384-4bc3-aada-e9c4489960e1?action=share&source=collection_link&creator=42911537"
+	},
+	"item": [
+		{
+			"name": "support/add-ticket/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"can not login\",\n    \"description\":\"test description\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/add-ticket/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"add-ticket",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-ticket/can-not-login-5ce4c667/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"can not login\",\n    \"description\":\"test description\"\n\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/delete-ticket/can-not-login-5ce4c667/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"delete-ticket",
+						"can-not-login-5ce4c667",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-tickets/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"can not login\",\n    \"description\":\"test description\"\n\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/list-tickets/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"list-tickets",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-ticket/can-not-login-f1259a52/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"cannot create account\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/edit-ticket/can-not-login-f1259a52/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"edit-ticket",
+						"can-not-login-f1259a52",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-message/can-not-login-f1259a52/reply/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjUxMjY2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6IjM0NDc2OTkzOGZlMTRkZDI4ODQ3NDkwN2ZmZWRmNTA4IiwidXNlcl9pZCI6NTB9.pmWX_fkA4UWyLlhqTQBHfnHQOtGPTYf2ydpw5LeB9vg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"message\":\"test message\",\n    \"title\":\"can not create account\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/create-message/can-not-login-f1259a52/reply/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"create-message",
+						"can-not-login-f1259a52",
+						"reply",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/list-ticket-message/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjUxMjY2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6IjM0NDc2OTkzOGZlMTRkZDI4ODQ3NDkwN2ZmZWRmNTA4IiwidXNlcl9pZCI6NTB9.pmWX_fkA4UWyLlhqTQBHfnHQOtGPTYf2ydpw5LeB9vg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0Nzk4MjIxMCwiaWF0IjoxNzQ3NjM2NjEwLCJqdGkiOiIyMDM5MjJjNWZkOTU0Mjc2OWM1ZWJhZWM5ZjdmYmUxMCIsInVzZXJfaWQiOjUwfQ.FtlJwzlNtNwf2mwJpnBvRbbyGBaShXYYRlSIAW31bPY\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/list-ticket-message/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"list-ticket-message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "response-to-messages/can-not-create-account-cb589a90/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjUxMjY2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6IjM0NDc2OTkzOGZlMTRkZDI4ODQ3NDkwN2ZmZWRmNTA4IiwidXNlcl9pZCI6NTB9.pmWX_fkA4UWyLlhqTQBHfnHQOtGPTYf2ydpw5LeB9vg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admin_response\":\"trying to fix please wait\",\n    \"message_status\":\"answered\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/response-to-messages/can-not-create-account-cb589a90/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"response-to-messages",
+						"can-not-create-account-cb589a90",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "messages/details/can-not-create-account-cb589a90/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjUxMjY2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6IjM0NDc2OTkzOGZlMTRkZDI4ODQ3NDkwN2ZmZWRmNTA4IiwidXNlcl9pZCI6NTB9.pmWX_fkA4UWyLlhqTQBHfnHQOtGPTYf2ydpw5LeB9vg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admin_response\":\"trying to fix please wait\",\n    \"message_status\":\"answered\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/messages/details/can-not-create-account-cb589a90/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"messages",
+						"details",
+						"can-not-create-account-cb589a90",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

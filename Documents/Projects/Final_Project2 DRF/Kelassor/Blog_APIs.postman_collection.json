@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "861ef26f-9c28-4239-9ae9-3ba9082bf0ad",
+		"name": "Blog_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911537",
+		"_collection_link": "https://yektaco.postman.co/workspace/Kelassor-APIs~32f12586-362a-43ea-8529-f01bb9598e13/collection/42911537-861ef26f-9c28-4239-9ae9-3ba9082bf0ad?action=share&source=collection_link&creator=42911537"
+	},
+	"item": [
+		{
+			"name": "/add-category/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"backend_dev\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/add-category/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"add-category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload-blog/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"how to learn django\",\n    \"content\":\"test content\",\n    \"blogcategory\":\"backend_dev\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/upload-blog/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"upload-blog",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-category/test-ali/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/delete-category/test-ali/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"delete-category",
+						"test-ali",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/list-category-blogs/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/list-category-blogs/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"list-category-blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-blog/how-to-learn-django-951aac54/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"how not to learn php\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/edit-blog/how-to-learn-django-951aac54/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"edit-blog",
+						"how-to-learn-django-951aac54",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail-blog/how-to-learn-django-951aac54/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"how not to learn php\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/detail-blog/how-to-learn-django-951aac54/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"detail-blog",
+						"how-to-learn-django-951aac54",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-blog/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"how not to learn php\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/list-blog/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"list-blog",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-all-blogs/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"how not to learn php\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/list-all-blogs/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"list-all-blogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8000/blogs/upload-blog/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3ODM0MTQ1LCJpYXQiOjE3NDc2NzgxMTcsImp0aSI6ImYxZjQ3NjQwYWQ5MzQ1MDA5Nzk4NWU3MDc3ZDQ5Y2VkIiwidXNlcl9pZCI6NTB9.m59yAn1FV7aPU8PZqjLqI--SmqwoeJg5VrSEpwbLyjY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"test blog title\",\n    \"content\":\"test content\",\n    \"blogcategory\":\"testfor delete\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/blogs/upload-blog/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"blogs",
+						"upload-blog",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

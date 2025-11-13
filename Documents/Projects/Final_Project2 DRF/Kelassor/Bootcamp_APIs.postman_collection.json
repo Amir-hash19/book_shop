@@ -1,0 +1,589 @@
+{
+	"info": {
+		"_postman_id": "7b6539a3-6067-4036-b822-acb7b825bb54",
+		"name": "Bootcamp_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911537",
+		"_collection_link": "https://yektaco.postman.co/workspace/Kelassor-APIs~32f12586-362a-43ea-8529-f01bb9598e13/collection/42911537-7b6539a3-6067-4036-b822-acb7b825bb54?action=share&source=collection_link&creator=42911537"
+	},
+	"item": [
+		{
+			"name": "/add-bootcamp/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjY2MzEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6Ijg2NTdhNmJlZWUyZDQxMTg4OTI0NGI5ODQ2NWJkMzAwIiwidXNlcl9pZCI6NTB9.tyEz6LiWmWVIOpR-rQby7SmkifEa3cPdNkNRg35P3Bg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"instructor\":[\"alireza225@email.com\"],\n    \"title\":\"social media\",\n    \"price\":\"200000\",\n    \"capacity\":20,\n    \"status\":\"registering\",\n    \"description\":\"learn something\",\n    \"start_date\":\"2025-07-05\",\n    \"end_date\":\"2025-09-05\",\n    \"hours\":\"60 hours\",\n    \"days\":\"odd days of week\"\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/add-bootcamp/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"add-bootcamp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-category/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjY2MzEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6Ijg2NTdhNmJlZWUyZDQxMTg4OTI0NGI5ODQ2NWJkMzAwIiwidXNlcl9pZCI6NTB9.tyEz6LiWmWVIOpR-rQby7SmkifEa3cPdNkNRg35P3Bg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"SociaMedia\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/add-category/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"add-category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-category/Socia-Media/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjY2MzEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6Ijg2NTdhNmJlZWUyZDQxMTg4OTI0NGI5ODQ2NWJkMzAwIiwidXNlcl9pZCI6NTB9.tyEz6LiWmWVIOpR-rQby7SmkifEa3cPdNkNRg35P3Bg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"no SocialMedia\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/edit-category/Socia-Media/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"edit-category",
+						"Socia-Media",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-bootcamp-category/Socia-Media/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjY2MzEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6Ijg2NTdhNmJlZWUyZDQxMTg4OTI0NGI5ODQ2NWJkMzAwIiwidXNlcl9pZCI6NTB9.tyEz6LiWmWVIOpR-rQby7SmkifEa3cPdNkNRg35P3Bg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/delete-bootcamp-category/Socia-Media/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"delete-bootcamp-category",
+						"Socia-Media",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-bootcamp/test-bootcamp/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"django and python is the best\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/edit-bootcamp/test-bootcamp/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"edit-bootcamp",
+						"test-bootcamp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-bootcamp/test-bootcamp/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/delete-bootcamp/test-bootcamp/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"delete-bootcamp",
+						"test-bootcamp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bootcamps/fontend-404/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/bootcamps/fontend-404/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"bootcamps",
+						"fontend-404",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bootcampcategories/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/bootcampcategories/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"bootcampcategories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-category-bootcamp/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/list-category-bootcamp/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"list-category-bootcamp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-all-bootcamps/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/list-all-bootcamps/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"list-all-bootcamps",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail-bootcamp/fontend-404/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/detail-bootcamp/fontend-404/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"detail-bootcamp",
+						"fontend-404",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "most-registered-bootcamp/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/most-registered-bootcamp/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"most-registered-bootcamp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-bootcamp-registration/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/list-bootcamp-registration/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"list-bootcamp-registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check-registration-status/front-spring404/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"admin_status_comment\":\"we accepted your request\",\n    \"status\":\"approved\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/check-registration-status/front-spring404/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"check-registration-status",
+						"front-spring404",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bootcamp-signup/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bootcamp\":\"fontend 404\",\n    \"phone_number\":\"+989355643212\",\n    \"payment_type\":\"check\",\n    \"comment\":\"please answer soon\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/bootcamp-signup/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"bootcamp-signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approved-students/fontend-404/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bootcamp\":\"fontend 404\",\n    \"phone_number\":\"+989355643212\",\n    \"payment_type\":\"check\",\n    \"comment\":\"please answer soon\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/bootcamps/approved-students/fontend-404/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"bootcamps",
+						"approved-students",
+						"fontend-404",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/list-SMSLog/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3Njg1MzE3LCJpYXQiOjE3NDc2NTkxMTAsImp0aSI6ImRhNWE5OGJjN2E0ODQ0MDA5YmQ3ZGIzZmZjMDkxODY0IiwidXNlcl9pZCI6NTB9.zzlJNrdaideIDcj9gFjJBkJz7kLKjOHwdM7apX8HmB0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bootcamp\":\"fontend 404\",\n    \"phone_number\":\"+989355643212\",\n    \"payment_type\":\"check\",\n    \"comment\":\"please answer soon\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/bootcamps/list-SMSLog/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bootcamps",
+						"list-SMSLog",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,14 @@
+Django==5.2.1
+djangorestframework==3.15.1
+pillow==11.2.1
+markdown==3.8
+django-filter==25.1
+psycopg2-binary==2.9.10
+celery==5.5.0
+kavenegar==1.1.2
+python-decouple==3.8
+djangorestframework-simplejwt==5.5.0
+django-redis==5.4.0
+django-celery-beat==2.8.1
+django-anymail[mailgun]==10.2
+drf-yasg==1.21.10  

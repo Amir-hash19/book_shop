@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "3628cbec-9721-474a-9c70-9bdf6a2f5591",
+		"name": "Finance_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911537",
+		"_collection_link": "https://yektaco.postman.co/workspace/Kelassor-APIs~32f12586-362a-43ea-8529-f01bb9598e13/collection/42911537-3628cbec-9721-474a-9c70-9bdf6a2f5591?action=share&source=collection_link&creator=42911537"
+	},
+	"item": [
+		{
+			"name": "finance/create-invoice/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\":\"alireza_1@5\",\n    \"amount\":\"1000000\",\n    \"deadline\":\"2025-06-09\",\n    \"description\":\"this amount for signup online python class\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/create-invoice/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"create-invoice",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-users-invoices/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\":\"alireza_1@5\",\n    \"amount\":\"1000000\",\n    \"deadline\":\"2025-06-09\",\n    \"description\":\"this amount for signup online python class\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/list-users-invoices/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"list-users-invoices",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-invoice/invoice-20250512-d7363949/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client\":\"alireza_1@5\",\n    \"amount\":\"1000000\",\n    \"deadline\":\"2025-06-09\",\n    \"description\":\"this amount for signup online python class\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/delete-invoice/invoice-20250512-d7363949/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"delete-invoice",
+						"invoice-20250512-d7363949",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/create/invoice-20250519-3abd3565/payment/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\":\"200000\",\n    \"method\":\"online\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/create/invoice-20250519-3abd3565/payment/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"create",
+						"invoice-20250519-3abd3565",
+						"payment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-payments/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\":\"200000\",\n    \"method\":\"online\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/list-payments/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"list-payments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-payments-user/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\":\"200000\",\n    \"method\":\"online\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/list-payments-user/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"list-payments-user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-transactions/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"amount\":\"200000\",\n    \"method\":\"online\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/list-transactions/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"list-transactions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-invoices/ssd-notpaid/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\":\"ssd paid shode\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/edit-invoices/ssd-notpaid/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"edit-invoices",
+						"ssd-notpaid",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/list-invoice-user/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\":\"ssd paid shode\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/list-invoice-user/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"list-invoice-user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail-invoice-user/ssd-notpaid/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\":\"ssd paid shode\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/detail-invoice-user/ssd-notpaid/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"detail-invoice-user",
+						"ssd-notpaid",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail-invoice-user/ssd-notpaid/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\":\"ssd paid shode\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/detail-invoice-user/ssd-notpaid/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"detail-invoice-user",
+						"ssd-notpaid",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail-transaction-user/trasaction-test/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjYyMDk2LCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImYzYjlmMzMyYzY2OTRhZTlhNWFkYzU5ODA1ODI2YzNhIiwidXNlcl9pZCI6NTB9.S-T4ajkdAywqlhLFEcwCROyYgcSEx7bjAjaBzwqhEzw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\":\"ssd paid shode\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/finance/detail-transaction-user/trasaction-test/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"finance",
+						"detail-transaction-user",
+						"trasaction-test",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "638e59ef-1fa7-4f60-8da2-611bacd6b153",
+		"name": "Acccount_APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911537",
+		"_collection_link": "https://yektaco.postman.co/workspace/Kelassor-APIs~32f12586-362a-43ea-8529-f01bb9598e13/collection/42911537-638e59ef-1fa7-4f60-8da2-611bacd6b153?action=share&source=collection_link&creator=42911537"
+	},
+	"item": [
+		{
+			"name": "create-account/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"amirykta$22\",\n    \"first_name\":\"amirhosein\",\n    \"last_name\":\"heydari\",\n    \"phone\":\"+989966935705\",\n    \"national_id\":\"7777777777\",\n    \"email\":\"amirhoseinhydri1381@email.com\",\n    \"gender\":\"male\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/create-account/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"create-account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit/account/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"last_name\":\"yekta\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/edit-account/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"edit-account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail/account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/detail-account/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"detail-account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-supportpanel-user/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/list-supportpanel-user/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"list-supportpanel-user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "promote-to-user/",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete-supportpanel-user/slug/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/delete-supportpanel-user/amirykta12-26b001fe/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"delete-supportpanel-user",
+						"amirykta12-26b001fe",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin-activity-logs/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NjQzODEwLCJpYXQiOjE3NDc2MzY2MTAsImp0aSI6ImM0ZTZhNDhmYmNjOTRjYzI4YjgyNTRmODdlOTk2MTM4IiwidXNlcl9pZCI6NTB9.WvjTpekkbouQVx882b7p-B4HdVlbtywMGB-FShwa9s0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/admin-activity-logs/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"admin-activity-logs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0ODAwNDcxMCwiaWF0IjoxNzQ3NjU5MTEwLCJqdGkiOiJiZDdkZGFmYjljODE0NDQ0YjA2OGEyOThhOGQ1ZmUxMCIsInVzZXJfaWQiOjUwfQ.FT4d3Ju2eJypveOT2v1XHb9VmU7edjymJW51ETmJYjs\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/refresh-token/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"refresh-token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "permissions/lists/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzM1MzYwLCJpYXQiOjE3NDc2NzgxMTcsImp0aSI6IjM4MGNhYWQ3NDlhMzRhNjE5MDRmZDYzYTJkNzMzNTM1IiwidXNlcl9pZCI6NTB9.yXq0P-F0ZLt6Juj4EDvugx-QXrF5cWy2Y5mJQJcZ8dc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0ODAwNDcxMCwiaWF0IjoxNzQ3NjU5MTEwLCJqdGkiOiJiZDdkZGFmYjljODE0NDQ0YjA2OGEyOThhOGQ1ZmUxMCIsInVzZXJfaWQiOjUwfQ.FT4d3Ju2eJypveOT2v1XHb9VmU7edjymJW51ETmJYjs\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/permissions/lists/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"permissions",
+						"lists",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/groups/create/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzM1MzYwLCJpYXQiOjE3NDc2NzgxMTcsImp0aSI6IjM4MGNhYWQ3NDlhMzRhNjE5MDRmZDYzYTJkNzMzNTM1IiwidXNlcl9pZCI6NTB9.yXq0P-F0ZLt6Juj4EDvugx-QXrF5cWy2Y5mJQJcZ8dc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"group_name\":\"ticket_team\",\n    \"permissions\":[\"view_ticket\", \"view_ticketmessage\", \"change_ticket\", \"change_ticketmessage\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/accounts/groups/create/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"groups",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_permission_class",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ3NzM1MzYwLCJpYXQiOjE3NDc2NzgxMTcsImp0aSI6IjM4MGNhYWQ3NDlhMzRhNjE5MDRmZDYzYTJkNzMzNTM1IiwidXNlcl9pZCI6NTB9.yXq0P-F0ZLt6Juj4EDvugx-QXrF5cWy2Y5mJQJcZ8dc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"group_name\":\"ticket_team\",\n    \"permissions\":[\"view_ticket\", \"view_ticketmessage\", \"change_ticket\", \"change_ticketmessage\"]\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/support/c",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"support",
+						"c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
